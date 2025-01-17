@@ -7,7 +7,7 @@ function App() {
     // Fetch data from MongoDB Data API
     const fetchData = async () => {
       try {
-        const response = await axios.post(
+        const response = await axios.get(
           "https://web-dev-uof-t-hacks2025.vercel.app/users"
         );
         console.log(response.data)
